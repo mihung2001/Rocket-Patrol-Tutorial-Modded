@@ -132,6 +132,7 @@ class Play extends Phaser.Scene {
 
         if (this.gameOver) {
             this.highScore();
+            this.backgroundMusic.stop()
         }
         //Check Key Input for Restart
         if (this.gameOver && Phaser.Input.Keyboard.JustDown(keyR)) {
