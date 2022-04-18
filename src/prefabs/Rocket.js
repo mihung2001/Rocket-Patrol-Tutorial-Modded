@@ -1,3 +1,8 @@
+//Rocket Patrol Mods
+//Made by Huy Nguyen
+//4/18/2022
+//Completion time: 15 hours
+
 class Rocket extends Phaser.GameObjects.Sprite {
     constructor(scene, x, y, texture, frame) {
         super(scene, x, y, texture, frame);

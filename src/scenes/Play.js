@@ -1,3 +1,8 @@
+//Rocket Patrol Mods
+//Made by Huy Nguyen
+//4/18/2022
+//Completion time: 15 hours
+
 class Play extends Phaser.Scene {
     constructor() {
         super("playScene");
