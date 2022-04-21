@@ -99,7 +99,7 @@ class Play extends Phaser.Scene {
             fixedWidth: 0
         }
         this.scoreRight = this.add.text(borderUISize + borderPadding * 35.5, borderUISize + borderPadding * 2, 'HiScore: ' + localStorage.getItem("HighScore"), highScoreConfig);
-        //Game Over Flfag
+        //Game Over Flag
         this.gameOver = false;
 
         //60 Second Play Clock
@@ -131,9 +131,6 @@ class Play extends Phaser.Scene {
             this.timer.setText(parseInt((game.settings.gameTimer / 1000) - (this.clock.getProgress().toString()*(game.settings.gameTimer / 1000))) + 's Left');
             this.p1Rocket.x = this.game.input.activePointer.x;
         }
-        // if (Phaser.Input.POINTER_MOVE) {
-        //     this.p1Rocket.x = this.game.input.activePointer.x;
-        // }
 
         if (this.gameOver) {
             this.highScore();
